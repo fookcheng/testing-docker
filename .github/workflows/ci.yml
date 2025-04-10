@@ -30,5 +30,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Approve build scripts
+        run: pnpm approve-builds -g
+
       - name: Build application
         run: pnpm build
